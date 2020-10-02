@@ -32,7 +32,7 @@ N=math.ceil(wid/pit) #微小山の本数（切り上げ）
 for i in range(N) : # X方向のループ
     Command1=['X',str(round(i*pit,3)),'\n']
     file.writelines(Command1)
-    Command2=['G0Z',str(Ap_Z),'\n','\n','Y0.','\n']
+    Command2=['G0Z',str(Ap_Z),'\n','Y0.','\n']
     file.writelines(Command2)
     file.write('G1')
     Command3=['Y',str(round(0.0,3)),'Z',str(round(Z,3)),'\n']
